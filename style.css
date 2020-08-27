@@ -1,0 +1,20 @@
+.chart
+{
+	display: inline-block;
+	width: 25px;
+	height: 75px;
+	margin-right: 2px;
+	background-color: coral;
+}
+	
+					
+.axis text{
+	font-family: sans-serif;
+	font-size:11px;	
+}
+
+.line {
+	fill: none;
+	stroke: steelblue;
+	stroke-width: 2px;
+}
