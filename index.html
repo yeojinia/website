@@ -119,6 +119,9 @@
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
+<script src="https://d3js.org/d3-dsv.v2.min.js"></script>
+<script src="https://d3js.org/d3-fetch.v2.min.js"></script>
+
 <div class="rangeslider"> 
 <input type="range" min="1" max="100" value="10" class="myslider" id="sliderRange">
 <p>Value: <span id="demo"></span></p> 
@@ -261,7 +264,7 @@ function tooltipHtml(n, d){	/* function to create html content string in tooltip
 		.attr('height', function(d) {return h-(y(d) + padding);})
 
 
-		//.attr('y', (d, i) => {return 100-temperature_freq[i]})
+	//.attr('y', (d, i) => {return 100-temperature_freq[i]})
 		
 	//var svgdiv = $("#my_dataviz");
 	//var divwidth = svgdiv.width();
@@ -279,9 +282,17 @@ function tooltipHtml(n, d){	/* function to create html content string in tooltip
 
 
 <script>
-d3.csv("/data/total_daily_stats2.csv").then(function(data) {
-  console.log(data);
+
+d3.csv("C:/Users/kyj87/eclipse-workspace/javascript_test/data/total_daily_stats2.csv", function(error, data) {
+	if(error) throw error;
+	  console.log(data);
 });
+
+
+
+//d3.csv("./data/total_daily_stats2.csv")
+//    .row(function(d) { return {key: d.key, value: +d.value}; })
+//    .get(function(error, rows) { console.log(rows); });
 
 </script>
 
