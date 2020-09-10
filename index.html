@@ -10,7 +10,7 @@
 <script type= "text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
 <script type= "text/javascript" src="select-togglebutton.js"></script>
 <script type= "text/javascript" src="data/daily_stats3.json"></script>
-<script type= "text/javascript" src="data/disease_corr.json"></script>
+<script type= "text/javascript" src="data/disease_correlation2.json"></script>
 <script type= "text/javascript" src="data/confirmed_cases.json"></script>
 
 <!-- <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script> -->
@@ -46,6 +46,9 @@
 }
 .heatmap-details{
 	font-size: 10;
+}
+.heatmap-container{
+	display:flex;
 }
 .top {
 	background-color: #333;
@@ -200,7 +203,7 @@
 		<div class = "chart-container" >			
 			<div class="barchart-container"> <!-- 	style="height: 370px; width: 90%;" -->
 				<!-- <label for="barchart">Confirmed Cases </label> -->
-				<svg id="barChartContainer" width="600px" height="370px">
+				<svg id="barChartContainer" width="800px" height="400px">
 			</div>
 			
 			<div class="interaction-container">
@@ -269,7 +272,7 @@
 			
 		</div>
 
-		<h1> United States Map </h1>
+		<h1> Confirmed Cases / Deaths </h1>
 		<div class="states_div">
 
 			<svg width="1400" height="650" id="statesvg">
@@ -279,11 +282,12 @@
 			</div>
 		</div>
 
-		<h1>Conditions contributing to deaths involving covid-19 diseases</h1>
+		<h1>Conditions contributing to deaths involving covid-19 (U071)</h1>
 		<div class="heatmap-container">
-			<div id="my_dataviz"></div>
+			<div id="my_dataviz" class="heatmap-vis"></div>
 			<div class = "heatmap-details">
-				<b>Description of Disease</b>
+				<br><br><br><br>
+				<p style="font-size:1vw"><b>Description of Disease</b></p>
 				<br>0: J09-J18 (Respiratory diseases - Influenza and pneumonia)
                 <br>1: J40-J47 (Respiratory diseases - Chronic lower respiratory diseases)
                 <br>2: J80 (Respiratory diseases - Adult respiratory distress syndrome)
@@ -306,7 +310,7 @@
                 <br>19: E10-E14 (Diabetes)
                 <br>20: E65-E68 (Obesity)
                 <br>21: F01, F03 (Vascular and unspecified dementia)
-                <br>22: U071  (COVID-19)
+                <br><p style="color:red">22: U071  (COVID-19)</p>
 			
 			</div>
 		<div>
@@ -353,8 +357,8 @@
 <script>
 	function tooltipHtml(n, d){	// function to create html content string in tooltip div. 
 		return "<h4>"+n+"</h4><table>"+
-			"<tr><td>Confirmed Cases</td><td>"+(d.sum)+"</td></tr>"+
-			"<tr><td>Death Cases</td><td>"+(d.death)+"</td></tr>"+
+			"<tr><td>Cases</td><td>"+(d.sum)+"</td></tr>"+
+			"<tr><td>Deaths</td><td>"+(d.death)+"</td></tr>"+
 			"</table>";
 	}
 	
@@ -567,8 +571,8 @@ $('#state_multiple_select').change(function(){
 });
 */
 	const side_margin = 60;
-	const bar_width = 600 - 2* side_margin;
-	const bar_height = 390 - 2* side_margin;
+	const bar_width = 800 - 2* side_margin;
+	const bar_height = 400 - 2* side_margin;
 	
 	//const chart_div = d3.select('#chartContainer')
 	//	.attr('transform', `translate(300, 300)`);
