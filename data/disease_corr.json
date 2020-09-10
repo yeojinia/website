@@ -1,0 +1,2648 @@
+disease_corr=
+[
+  {
+    "group": 0,
+    "variable": 0,
+    "value": 1
+  },
+  {
+    "group": 0,
+    "variable": 1,
+    "value": 0.806152825218045
+  },
+  {
+    "group": 0,
+    "variable": 2,
+    "value": 0.9200990296493379
+  },
+  {
+    "group": 0,
+    "variable": 3,
+    "value": 0.9446484084041556
+  },
+  {
+    "group": 0,
+    "variable": 4,
+    "value": 0.8315534414010282
+  },
+  {
+    "group": 0,
+    "variable": 5,
+    "value": 0.8489088292904325
+  },
+  {
+    "group": 0,
+    "variable": 6,
+    "value": 0.8134565488542517
+  },
+  {
+    "group": 0,
+    "variable": 7,
+    "value": 0.8527734362669166
+  },
+  {
+    "group": 0,
+    "variable": 8,
+    "value": 0.8672139174426812
+  },
+  {
+    "group": 0,
+    "variable": 9,
+    "value": 0.8868220671666454
+  },
+  {
+    "group": 0,
+    "variable": 10,
+    "value": 0.8805756757870893
+  },
+  {
+    "group": 0,
+    "variable": 11,
+    "value": 0.9026625362997527
+  },
+  {
+    "group": 0,
+    "variable": 12,
+    "value": 0.9259550918266691
+  },
+  {
+    "group": 0,
+    "variable": 13,
+    "value": 0.8286085315595921
+  },
+  {
+    "group": 0,
+    "variable": 14,
+    "value": 0.9563123050976995
+  },
+  {
+    "group": 0,
+    "variable": 15,
+    "value": 0.8174656416547322
+  },
+  {
+    "group": 0,
+    "variable": 16,
+    "value": 0.8469491102500915
+  },
+  {
+    "group": 0,
+    "variable": 17,
+    "value": 0.8091652449041182
+  },
+  {
+    "group": 0,
+    "variable": 18,
+    "value": 0.9309368168503741
+  },
+  {
+    "group": 0,
+    "variable": 19,
+    "value": 0.882338416717128
+  },
+  {
+    "group": 0,
+    "variable": 20,
+    "value": 0.7497495237595265
+  },
+  {
+    "group": 0,
+    "variable": 21,
+    "value": 0.7499069919112906
+  },
+  {
+    "group": 0,
+    "variable": 22,
+    "value": 0.9862408131120196
+  },
+  {
+    "group": 1,
+    "variable": 0,
+    "value": 0.806152825218045
+  },
+  {
+    "group": 1,
+    "variable": 1,
+    "value": 1
+  },
+  {
+    "group": 1,
+    "variable": 2,
+    "value": 0.6633193080233568
+  },
+  {
+    "group": 1,
+    "variable": 3,
+    "value": 0.6460683335663074
+  },
+  {
+    "group": 1,
+    "variable": 4,
+    "value": 0.4498142501577844
+  },
+  {
+    "group": 1,
+    "variable": 5,
+    "value": 0.7103321551600705
+  },
+  {
+    "group": 1,
+    "variable": 6,
+    "value": 0.9581067702142733
+  },
+  {
+    "group": 1,
+    "variable": 7,
+    "value": 0.9716782510358899
+  },
+  {
+    "group": 1,
+    "variable": 8,
+    "value": 0.49383681439363736
+  },
+  {
+    "group": 1,
+    "variable": 9,
+    "value": 0.889492734904109
+  },
+  {
+    "group": 1,
+    "variable": 10,
+    "value": 0.8003769639267995
+  },
+  {
+    "group": 1,
+    "variable": 11,
+    "value": 0.8711148892285854
+  },
+  {
+    "group": 1,
+    "variable": 12,
+    "value": 0.8434652141740808
+  },
+  {
+    "group": 1,
+    "variable": 13,
+    "value": 0.5528335214368127
+  },
+  {
+    "group": 1,
+    "variable": 14,
+    "value": 0.910962746008428
+  },
+  {
+    "group": 1,
+    "variable": 15,
+    "value": 0.7690289013216374
+  },
+  {
+    "group": 1,
+    "variable": 16,
+    "value": 0.5919232445784919
+  },
+  {
+    "group": 1,
+    "variable": 17,
+    "value": 0.8980426752551156
+  },
+  {
+    "group": 1,
+    "variable": 18,
+    "value": 0.7832418478993193
+  },
+  {
+    "group": 1,
+    "variable": 19,
+    "value": 0.9446549722964468
+  },
+  {
+    "group": 1,
+    "variable": 20,
+    "value": 0.9077586305820409
+  },
+  {
+    "group": 1,
+    "variable": 21,
+    "value": 0.9022422235128942
+  },
+  {
+    "group": 1,
+    "variable": 22,
+    "value": 0.825622875470762
+  },
+  {
+    "group": 2,
+    "variable": 0,
+    "value": 0.9200990296493379
+  },
+  {
+    "group": 2,
+    "variable": 1,
+    "value": 0.6633193080233568
+  },
+  {
+    "group": 2,
+    "variable": 2,
+    "value": 1
+  },
+  {
+    "group": 2,
+    "variable": 3,
+    "value": 0.8802138985982606
+  },
+  {
+    "group": 2,
+    "variable": 4,
+    "value": 0.8481812199362986
+  },
+  {
+    "group": 2,
+    "variable": 5,
+    "value": 0.7590758687557346
+  },
+  {
+    "group": 2,
+    "variable": 6,
+    "value": 0.6901823226003306
+  },
+  {
+    "group": 2,
+    "variable": 7,
+    "value": 0.7453808968987292
+  },
+  {
+    "group": 2,
+    "variable": 8,
+    "value": 0.8869800069601663
+  },
+  {
+    "group": 2,
+    "variable": 9,
+    "value": 0.7316043160203947
+  },
+  {
+    "group": 2,
+    "variable": 10,
+    "value": 0.7241422031069159
+  },
+  {
+    "group": 2,
+    "variable": 11,
+    "value": 0.7735497559867264
+  },
+  {
+    "group": 2,
+    "variable": 12,
+    "value": 0.8154993893671462
+  },
+  {
+    "group": 2,
+    "variable": 13,
+    "value": 0.6561626947185543
+  },
+  {
+    "group": 2,
+    "variable": 14,
+    "value": 0.8719486523562916
+  },
+  {
+    "group": 2,
+    "variable": 15,
+    "value": 0.6450874136806413
+  },
+  {
+    "group": 2,
+    "variable": 16,
+    "value": 0.6876019517903196
+  },
+  {
+    "group": 2,
+    "variable": 17,
+    "value": 0.6555371386837126
+  },
+  {
+    "group": 2,
+    "variable": 18,
+    "value": 0.8263494841436901
+  },
+  {
+    "group": 2,
+    "variable": 19,
+    "value": 0.715116990678683
+  },
+  {
+    "group": 2,
+    "variable": 20,
+    "value": 0.5241565910575308
+  },
+  {
+    "group": 2,
+    "variable": 21,
+    "value": 0.6533217074398843
+  },
+  {
+    "group": 2,
+    "variable": 22,
+    "value": 0.9169002401179087
+  },
+  {
+    "group": 3,
+    "variable": 0,
+    "value": 0.9446484084041556
+  },
+  {
+    "group": 3,
+    "variable": 1,
+    "value": 0.6460683335663074
+  },
+  {
+    "group": 3,
+    "variable": 2,
+    "value": 0.8802138985982606
+  },
+  {
+    "group": 3,
+    "variable": 3,
+    "value": 1
+  },
+  {
+    "group": 3,
+    "variable": 4,
+    "value": 0.906649848571222
+  },
+  {
+    "group": 3,
+    "variable": 5,
+    "value": 0.8643910385240762
+  },
+  {
+    "group": 3,
+    "variable": 6,
+    "value": 0.6179699887799658
+  },
+  {
+    "group": 3,
+    "variable": 7,
+    "value": 0.6733255938070838
+  },
+  {
+    "group": 3,
+    "variable": 8,
+    "value": 0.891313251263274
+  },
+  {
+    "group": 3,
+    "variable": 9,
+    "value": 0.8298390093270842
+  },
+  {
+    "group": 3,
+    "variable": 10,
+    "value": 0.8983485984347663
+  },
+  {
+    "group": 3,
+    "variable": 11,
+    "value": 0.8613674984264375
+  },
+  {
+    "group": 3,
+    "variable": 12,
+    "value": 0.8923165394072957
+  },
+  {
+    "group": 3,
+    "variable": 13,
+    "value": 0.8918535494088209
+  },
+  {
+    "group": 3,
+    "variable": 14,
+    "value": 0.8528820879044746
+  },
+  {
+    "group": 3,
+    "variable": 15,
+    "value": 0.8210075279468274
+  },
+  {
+    "group": 3,
+    "variable": 16,
+    "value": 0.8981092522472732
+  },
+  {
+    "group": 3,
+    "variable": 17,
+    "value": 0.7267923965676139
+  },
+  {
+    "group": 3,
+    "variable": 18,
+    "value": 0.9275703553819001
+  },
+  {
+    "group": 3,
+    "variable": 19,
+    "value": 0.7256743251204291
+  },
+  {
+    "group": 3,
+    "variable": 20,
+    "value": 0.5443750060860162
+  },
+  {
+    "group": 3,
+    "variable": 21,
+    "value": 0.6745957389539268
+  },
+  {
+    "group": 3,
+    "variable": 22,
+    "value": 0.9379271915810364
+  },
+  {
+    "group": 4,
+    "variable": 0,
+    "value": 0.8315534414010282
+  },
+  {
+    "group": 4,
+    "variable": 1,
+    "value": 0.4498142501577844
+  },
+  {
+    "group": 4,
+    "variable": 2,
+    "value": 0.8481812199362986
+  },
+  {
+    "group": 4,
+    "variable": 3,
+    "value": 0.906649848571222
+  },
+  {
+    "group": 4,
+    "variable": 4,
+    "value": 1
+  },
+  {
+    "group": 4,
+    "variable": 5,
+    "value": 0.7184618051023451
+  },
+  {
+    "group": 4,
+    "variable": 6,
+    "value": 0.4381561573578494
+  },
+  {
+    "group": 4,
+    "variable": 7,
+    "value": 0.518597631423214
+  },
+  {
+    "group": 4,
+    "variable": 8,
+    "value": 0.9399761506433405
+  },
+  {
+    "group": 4,
+    "variable": 9,
+    "value": 0.6278461518142345
+  },
+  {
+    "group": 4,
+    "variable": 10,
+    "value": 0.6970970402008774
+  },
+  {
+    "group": 4,
+    "variable": 11,
+    "value": 0.6864838222034144
+  },
+  {
+    "group": 4,
+    "variable": 12,
+    "value": 0.7259744136802988
+  },
+  {
+    "group": 4,
+    "variable": 13,
+    "value": 0.7119298432971781
+  },
+  {
+    "group": 4,
+    "variable": 14,
+    "value": 0.731322055168026
+  },
+  {
+    "group": 4,
+    "variable": 15,
+    "value": 0.6324168481006558
+  },
+  {
+    "group": 4,
+    "variable": 16,
+    "value": 0.7136571656342152
+  },
+  {
+    "group": 4,
+    "variable": 17,
+    "value": 0.5336984584111331
+  },
+  {
+    "group": 4,
+    "variable": 18,
+    "value": 0.7854062019868098
+  },
+  {
+    "group": 4,
+    "variable": 19,
+    "value": 0.5199053866481711
+  },
+  {
+    "group": 4,
+    "variable": 20,
+    "value": 0.3043452212353317
+  },
+  {
+    "group": 4,
+    "variable": 21,
+    "value": 0.5472768851982414
+  },
+  {
+    "group": 4,
+    "variable": 22,
+    "value": 0.8360352478881969
+  },
+  {
+    "group": 5,
+    "variable": 0,
+    "value": 0.8489088292904325
+  },
+  {
+    "group": 5,
+    "variable": 1,
+    "value": 0.7103321551600705
+  },
+  {
+    "group": 5,
+    "variable": 2,
+    "value": 0.7590758687557346
+  },
+  {
+    "group": 5,
+    "variable": 3,
+    "value": 0.8643910385240762
+  },
+  {
+    "group": 5,
+    "variable": 4,
+    "value": 0.7184618051023451
+  },
+  {
+    "group": 5,
+    "variable": 5,
+    "value": 0.9999999999999998
+  },
+  {
+    "group": 5,
+    "variable": 6,
+    "value": 0.649333589548605
+  },
+  {
+    "group": 5,
+    "variable": 7,
+    "value": 0.7236292848633066
+  },
+  {
+    "group": 5,
+    "variable": 8,
+    "value": 0.6875228991767164
+  },
+  {
+    "group": 5,
+    "variable": 9,
+    "value": 0.8516886471099233
+  },
+  {
+    "group": 5,
+    "variable": 10,
+    "value": 0.8753970084665464
+  },
+  {
+    "group": 5,
+    "variable": 11,
+    "value": 0.8491869668095721
+  },
+  {
+    "group": 5,
+    "variable": 12,
+    "value": 0.8997311748999974
+  },
+  {
+    "group": 5,
+    "variable": 13,
+    "value": 0.8037964478992323
+  },
+  {
+    "group": 5,
+    "variable": 14,
+    "value": 0.8401905305492703
+  },
+  {
+    "group": 5,
+    "variable": 15,
+    "value": 0.8156232675831465
+  },
+  {
+    "group": 5,
+    "variable": 16,
+    "value": 0.8554691291941529
+  },
+  {
+    "group": 5,
+    "variable": 17,
+    "value": 0.8360023550905742
+  },
+  {
+    "group": 5,
+    "variable": 18,
+    "value": 0.9042853778754155
+  },
+  {
+    "group": 5,
+    "variable": 19,
+    "value": 0.7477393505508537
+  },
+  {
+    "group": 5,
+    "variable": 20,
+    "value": 0.6636918993974601
+  },
+  {
+    "group": 5,
+    "variable": 21,
+    "value": 0.769153449966521
+  },
+  {
+    "group": 5,
+    "variable": 22,
+    "value": 0.8724736841084194
+  },
+  {
+    "group": 6,
+    "variable": 0,
+    "value": 0.8134565488542517
+  },
+  {
+    "group": 6,
+    "variable": 1,
+    "value": 0.9581067702142733
+  },
+  {
+    "group": 6,
+    "variable": 2,
+    "value": 0.6901823226003306
+  },
+  {
+    "group": 6,
+    "variable": 3,
+    "value": 0.6179699887799658
+  },
+  {
+    "group": 6,
+    "variable": 4,
+    "value": 0.4381561573578494
+  },
+  {
+    "group": 6,
+    "variable": 5,
+    "value": 0.649333589548605
+  },
+  {
+    "group": 6,
+    "variable": 6,
+    "value": 0.9999999999999998
+  },
+  {
+    "group": 6,
+    "variable": 7,
+    "value": 0.9700769131389804
+  },
+  {
+    "group": 6,
+    "variable": 8,
+    "value": 0.5244196741744712
+  },
+  {
+    "group": 6,
+    "variable": 9,
+    "value": 0.8162453416427535
+  },
+  {
+    "group": 6,
+    "variable": 10,
+    "value": 0.722616511088308
+  },
+  {
+    "group": 6,
+    "variable": 11,
+    "value": 0.8079890005513317
+  },
+  {
+    "group": 6,
+    "variable": 12,
+    "value": 0.778853825444719
+  },
+  {
+    "group": 6,
+    "variable": 13,
+    "value": 0.49429956647594764
+  },
+  {
+    "group": 6,
+    "variable": 14,
+    "value": 0.9007547298399403
+  },
+  {
+    "group": 6,
+    "variable": 15,
+    "value": 0.6769189381825483
+  },
+  {
+    "group": 6,
+    "variable": 16,
+    "value": 0.5186768257549681
+  },
+  {
+    "group": 6,
+    "variable": 17,
+    "value": 0.7969661373907363
+  },
+  {
+    "group": 6,
+    "variable": 18,
+    "value": 0.7129499128033788
+  },
+  {
+    "group": 6,
+    "variable": 19,
+    "value": 0.9695722622303451
+  },
+  {
+    "group": 6,
+    "variable": 20,
+    "value": 0.9133780729527106
+  },
+  {
+    "group": 6,
+    "variable": 21,
+    "value": 0.7835864977689498
+  },
+  {
+    "group": 6,
+    "variable": 22,
+    "value": 0.8263858544139877
+  },
+  {
+    "group": 7,
+    "variable": 0,
+    "value": 0.8527734362669166
+  },
+  {
+    "group": 7,
+    "variable": 1,
+    "value": 0.9716782510358899
+  },
+  {
+    "group": 7,
+    "variable": 2,
+    "value": 0.7453808968987292
+  },
+  {
+    "group": 7,
+    "variable": 3,
+    "value": 0.6733255938070838
+  },
+  {
+    "group": 7,
+    "variable": 4,
+    "value": 0.518597631423214
+  },
+  {
+    "group": 7,
+    "variable": 5,
+    "value": 0.7236292848633066
+  },
+  {
+    "group": 7,
+    "variable": 6,
+    "value": 0.9700769131389804
+  },
+  {
+    "group": 7,
+    "variable": 7,
+    "value": 1
+  },
+  {
+    "group": 7,
+    "variable": 8,
+    "value": 0.5863050814301631
+  },
+  {
+    "group": 7,
+    "variable": 9,
+    "value": 0.8778931165720756
+  },
+  {
+    "group": 7,
+    "variable": 10,
+    "value": 0.7586844561426584
+  },
+  {
+    "group": 7,
+    "variable": 11,
+    "value": 0.8743827996808897
+  },
+  {
+    "group": 7,
+    "variable": 12,
+    "value": 0.8549714570892436
+  },
+  {
+    "group": 7,
+    "variable": 13,
+    "value": 0.5714645921635886
+  },
+  {
+    "group": 7,
+    "variable": 14,
+    "value": 0.9449393270725848
+  },
+  {
+    "group": 7,
+    "variable": 15,
+    "value": 0.749489967040863
+  },
+  {
+    "group": 7,
+    "variable": 16,
+    "value": 0.6125809498090535
+  },
+  {
+    "group": 7,
+    "variable": 17,
+    "value": 0.8794476166473709
+  },
+  {
+    "group": 7,
+    "variable": 18,
+    "value": 0.7967532826836985
+  },
+  {
+    "group": 7,
+    "variable": 19,
+    "value": 0.9582964325639887
+  },
+  {
+    "group": 7,
+    "variable": 20,
+    "value": 0.9092564947118603
+  },
+  {
+    "group": 7,
+    "variable": 21,
+    "value": 0.8605688998110372
+  },
+  {
+    "group": 7,
+    "variable": 22,
+    "value": 0.862777308271855
+  },
+  {
+    "group": 8,
+    "variable": 0,
+    "value": 0.8672139174426812
+  },
+  {
+    "group": 8,
+    "variable": 1,
+    "value": 0.49383681439363736
+  },
+  {
+    "group": 8,
+    "variable": 2,
+    "value": 0.8869800069601663
+  },
+  {
+    "group": 8,
+    "variable": 3,
+    "value": 0.891313251263274
+  },
+  {
+    "group": 8,
+    "variable": 4,
+    "value": 0.9399761506433405
+  },
+  {
+    "group": 8,
+    "variable": 5,
+    "value": 0.6875228991767164
+  },
+  {
+    "group": 8,
+    "variable": 6,
+    "value": 0.5244196741744712
+  },
+  {
+    "group": 8,
+    "variable": 7,
+    "value": 0.5863050814301631
+  },
+  {
+    "group": 8,
+    "variable": 8,
+    "value": 1
+  },
+  {
+    "group": 8,
+    "variable": 9,
+    "value": 0.6310470730708069
+  },
+  {
+    "group": 8,
+    "variable": 10,
+    "value": 0.6677945295710349
+  },
+  {
+    "group": 8,
+    "variable": 11,
+    "value": 0.6825292335749895
+  },
+  {
+    "group": 8,
+    "variable": 12,
+    "value": 0.720099039715004
+  },
+  {
+    "group": 8,
+    "variable": 13,
+    "value": 0.7217830215032572
+  },
+  {
+    "group": 8,
+    "variable": 14,
+    "value": 0.7702592442569035
+  },
+  {
+    "group": 8,
+    "variable": 15,
+    "value": 0.6396485134292793
+  },
+  {
+    "group": 8,
+    "variable": 16,
+    "value": 0.704643101439659
+  },
+  {
+    "group": 8,
+    "variable": 17,
+    "value": 0.5100821110563769
+  },
+  {
+    "group": 8,
+    "variable": 18,
+    "value": 0.7418133486025478
+  },
+  {
+    "group": 8,
+    "variable": 19,
+    "value": 0.6079695303870436
+  },
+  {
+    "group": 8,
+    "variable": 20,
+    "value": 0.3922457944749063
+  },
+  {
+    "group": 8,
+    "variable": 21,
+    "value": 0.48957725084598375
+  },
+  {
+    "group": 8,
+    "variable": 22,
+    "value": 0.8481179750614853
+  },
+  {
+    "group": 9,
+    "variable": 0,
+    "value": 0.8868220671666454
+  },
+  {
+    "group": 9,
+    "variable": 1,
+    "value": 0.889492734904109
+  },
+  {
+    "group": 9,
+    "variable": 2,
+    "value": 0.7316043160203947
+  },
+  {
+    "group": 9,
+    "variable": 3,
+    "value": 0.8298390093270842
+  },
+  {
+    "group": 9,
+    "variable": 4,
+    "value": 0.6278461518142345
+  },
+  {
+    "group": 9,
+    "variable": 5,
+    "value": 0.8516886471099233
+  },
+  {
+    "group": 9,
+    "variable": 6,
+    "value": 0.8162453416427535
+  },
+  {
+    "group": 9,
+    "variable": 7,
+    "value": 0.8778931165720756
+  },
+  {
+    "group": 9,
+    "variable": 8,
+    "value": 0.6310470730708069
+  },
+  {
+    "group": 9,
+    "variable": 9,
+    "value": 1
+  },
+  {
+    "group": 9,
+    "variable": 10,
+    "value": 0.9451357333343003
+  },
+  {
+    "group": 9,
+    "variable": 11,
+    "value": 0.9751518068956523
+  },
+  {
+    "group": 9,
+    "variable": 12,
+    "value": 0.9728082251423267
+  },
+  {
+    "group": 9,
+    "variable": 13,
+    "value": 0.8125657647968979
+  },
+  {
+    "group": 9,
+    "variable": 14,
+    "value": 0.9243312264630914
+  },
+  {
+    "group": 9,
+    "variable": 15,
+    "value": 0.8970826003379542
+  },
+  {
+    "group": 9,
+    "variable": 16,
+    "value": 0.858595797525407
+  },
+  {
+    "group": 9,
+    "variable": 17,
+    "value": 0.961832456332557
+  },
+  {
+    "group": 9,
+    "variable": 18,
+    "value": 0.9552896338665022
+  },
+  {
+    "group": 9,
+    "variable": 19,
+    "value": 0.8884820760949195
+  },
+  {
+    "group": 9,
+    "variable": 20,
+    "value": 0.8348612649712125
+  },
+  {
+    "group": 9,
+    "variable": 21,
+    "value": 0.8925569994947835
+  },
+  {
+    "group": 9,
+    "variable": 22,
+    "value": 0.8876574085031383
+  },
+  {
+    "group": 10,
+    "variable": 0,
+    "value": 0.8805756757870893
+  },
+  {
+    "group": 10,
+    "variable": 1,
+    "value": 0.8003769639267995
+  },
+  {
+    "group": 10,
+    "variable": 2,
+    "value": 0.7241422031069159
+  },
+  {
+    "group": 10,
+    "variable": 3,
+    "value": 0.8983485984347663
+  },
+  {
+    "group": 10,
+    "variable": 4,
+    "value": 0.6970970402008774
+  },
+  {
+    "group": 10,
+    "variable": 5,
+    "value": 0.8753970084665464
+  },
+  {
+    "group": 10,
+    "variable": 6,
+    "value": 0.722616511088308
+  },
+  {
+    "group": 10,
+    "variable": 7,
+    "value": 0.7586844561426584
+  },
+  {
+    "group": 10,
+    "variable": 8,
+    "value": 0.6677945295710349
+  },
+  {
+    "group": 10,
+    "variable": 9,
+    "value": 0.9451357333343003
+  },
+  {
+    "group": 10,
+    "variable": 10,
+    "value": 1
+  },
+  {
+    "group": 10,
+    "variable": 11,
+    "value": 0.9341390543855788
+  },
+  {
+    "group": 10,
+    "variable": 12,
+    "value": 0.9374546690986072
+  },
+  {
+    "group": 10,
+    "variable": 13,
+    "value": 0.8427283415875525
+  },
+  {
+    "group": 10,
+    "variable": 14,
+    "value": 0.8751256001138378
+  },
+  {
+    "group": 10,
+    "variable": 15,
+    "value": 0.878154401460231
+  },
+  {
+    "group": 10,
+    "variable": 16,
+    "value": 0.8782968882929494
+  },
+  {
+    "group": 10,
+    "variable": 17,
+    "value": 0.8701028544370242
+  },
+  {
+    "group": 10,
+    "variable": 18,
+    "value": 0.9377945002903849
+  },
+  {
+    "group": 10,
+    "variable": 19,
+    "value": 0.8107227682536553
+  },
+  {
+    "group": 10,
+    "variable": 20,
+    "value": 0.7035231404997695
+  },
+  {
+    "group": 10,
+    "variable": 21,
+    "value": 0.8358886655179117
+  },
+  {
+    "group": 10,
+    "variable": 22,
+    "value": 0.898026331781887
+  },
+  {
+    "group": 11,
+    "variable": 0,
+    "value": 0.9026625362997527
+  },
+  {
+    "group": 11,
+    "variable": 1,
+    "value": 0.8711148892285854
+  },
+  {
+    "group": 11,
+    "variable": 2,
+    "value": 0.7735497559867264
+  },
+  {
+    "group": 11,
+    "variable": 3,
+    "value": 0.8613674984264375
+  },
+  {
+    "group": 11,
+    "variable": 4,
+    "value": 0.6864838222034144
+  },
+  {
+    "group": 11,
+    "variable": 5,
+    "value": 0.8491869668095721
+  },
+  {
+    "group": 11,
+    "variable": 6,
+    "value": 0.8079890005513317
+  },
+  {
+    "group": 11,
+    "variable": 7,
+    "value": 0.8743827996808897
+  },
+  {
+    "group": 11,
+    "variable": 8,
+    "value": 0.6825292335749895
+  },
+  {
+    "group": 11,
+    "variable": 9,
+    "value": 0.9751518068956523
+  },
+  {
+    "group": 11,
+    "variable": 10,
+    "value": 0.9341390543855788
+  },
+  {
+    "group": 11,
+    "variable": 11,
+    "value": 1
+  },
+  {
+    "group": 11,
+    "variable": 12,
+    "value": 0.9789065837500457
+  },
+  {
+    "group": 11,
+    "variable": 13,
+    "value": 0.818344201782228
+  },
+  {
+    "group": 11,
+    "variable": 14,
+    "value": 0.9417721404558177
+  },
+  {
+    "group": 11,
+    "variable": 15,
+    "value": 0.8983308164206361
+  },
+  {
+    "group": 11,
+    "variable": 16,
+    "value": 0.8462066619712523
+  },
+  {
+    "group": 11,
+    "variable": 17,
+    "value": 0.936255232306983
+  },
+  {
+    "group": 11,
+    "variable": 18,
+    "value": 0.950931131331648
+  },
+  {
+    "group": 11,
+    "variable": 19,
+    "value": 0.8693759101595151
+  },
+  {
+    "group": 11,
+    "variable": 20,
+    "value": 0.782072087043346
+  },
+  {
+    "group": 11,
+    "variable": 21,
+    "value": 0.8911622465388
+  },
+  {
+    "group": 11,
+    "variable": 22,
+    "value": 0.9123488684818903
+  },
+  {
+    "group": 12,
+    "variable": 0,
+    "value": 0.9259550918266691
+  },
+  {
+    "group": 12,
+    "variable": 1,
+    "value": 0.8434652141740808
+  },
+  {
+    "group": 12,
+    "variable": 2,
+    "value": 0.8154993893671462
+  },
+  {
+    "group": 12,
+    "variable": 3,
+    "value": 0.8923165394072957
+  },
+  {
+    "group": 12,
+    "variable": 4,
+    "value": 0.7259744136802988
+  },
+  {
+    "group": 12,
+    "variable": 5,
+    "value": 0.8997311748999974
+  },
+  {
+    "group": 12,
+    "variable": 6,
+    "value": 0.778853825444719
+  },
+  {
+    "group": 12,
+    "variable": 7,
+    "value": 0.8549714570892436
+  },
+  {
+    "group": 12,
+    "variable": 8,
+    "value": 0.720099039715004
+  },
+  {
+    "group": 12,
+    "variable": 9,
+    "value": 0.9728082251423267
+  },
+  {
+    "group": 12,
+    "variable": 10,
+    "value": 0.9374546690986072
+  },
+  {
+    "group": 12,
+    "variable": 11,
+    "value": 0.9789065837500457
+  },
+  {
+    "group": 12,
+    "variable": 12,
+    "value": 1
+  },
+  {
+    "group": 12,
+    "variable": 13,
+    "value": 0.8341068882733461
+  },
+  {
+    "group": 12,
+    "variable": 14,
+    "value": 0.9437543856621288
+  },
+  {
+    "group": 12,
+    "variable": 15,
+    "value": 0.8825028354188321
+  },
+  {
+    "group": 12,
+    "variable": 16,
+    "value": 0.8867067612090691
+  },
+  {
+    "group": 12,
+    "variable": 17,
+    "value": 0.9329350068737786
+  },
+  {
+    "group": 12,
+    "variable": 18,
+    "value": 0.9753445235434268
+  },
+  {
+    "group": 12,
+    "variable": 19,
+    "value": 0.8558393024043838
+  },
+  {
+    "group": 12,
+    "variable": 20,
+    "value": 0.778160921397088
+  },
+  {
+    "group": 12,
+    "variable": 21,
+    "value": 0.8729915946873632
+  },
+  {
+    "group": 12,
+    "variable": 22,
+    "value": 0.9326287987759878
+  },
+  {
+    "group": 13,
+    "variable": 0,
+    "value": 0.8286085315595921
+  },
+  {
+    "group": 13,
+    "variable": 1,
+    "value": 0.5528335214368127
+  },
+  {
+    "group": 13,
+    "variable": 2,
+    "value": 0.6561626947185543
+  },
+  {
+    "group": 13,
+    "variable": 3,
+    "value": 0.8918535494088209
+  },
+  {
+    "group": 13,
+    "variable": 4,
+    "value": 0.7119298432971781
+  },
+  {
+    "group": 13,
+    "variable": 5,
+    "value": 0.8037964478992323
+  },
+  {
+    "group": 13,
+    "variable": 6,
+    "value": 0.49429956647594764
+  },
+  {
+    "group": 13,
+    "variable": 7,
+    "value": 0.5714645921635886
+  },
+  {
+    "group": 13,
+    "variable": 8,
+    "value": 0.7217830215032572
+  },
+  {
+    "group": 13,
+    "variable": 9,
+    "value": 0.8125657647968979
+  },
+  {
+    "group": 13,
+    "variable": 10,
+    "value": 0.8427283415875525
+  },
+  {
+    "group": 13,
+    "variable": 11,
+    "value": 0.818344201782228
+  },
+  {
+    "group": 13,
+    "variable": 12,
+    "value": 0.8341068882733461
+  },
+  {
+    "group": 13,
+    "variable": 13,
+    "value": 1
+  },
+  {
+    "group": 13,
+    "variable": 14,
+    "value": 0.7171988207302256
+  },
+  {
+    "group": 13,
+    "variable": 15,
+    "value": 0.86183531987638
+  },
+  {
+    "group": 13,
+    "variable": 16,
+    "value": 0.974975812393803
+  },
+  {
+    "group": 13,
+    "variable": 17,
+    "value": 0.7316236308227879
+  },
+  {
+    "group": 13,
+    "variable": 18,
+    "value": 0.888181171725581
+  },
+  {
+    "group": 13,
+    "variable": 19,
+    "value": 0.668074620505072
+  },
+  {
+    "group": 13,
+    "variable": 20,
+    "value": 0.5829623559197755
+  },
+  {
+    "group": 13,
+    "variable": 21,
+    "value": 0.5794111714560926
+  },
+  {
+    "group": 13,
+    "variable": 22,
+    "value": 0.7823793134842079
+  },
+  {
+    "group": 14,
+    "variable": 0,
+    "value": 0.9563123050976995
+  },
+  {
+    "group": 14,
+    "variable": 1,
+    "value": 0.910962746008428
+  },
+  {
+    "group": 14,
+    "variable": 2,
+    "value": 0.8719486523562916
+  },
+  {
+    "group": 14,
+    "variable": 3,
+    "value": 0.8528820879044746
+  },
+  {
+    "group": 14,
+    "variable": 4,
+    "value": 0.731322055168026
+  },
+  {
+    "group": 14,
+    "variable": 5,
+    "value": 0.8401905305492703
+  },
+  {
+    "group": 14,
+    "variable": 6,
+    "value": 0.9007547298399403
+  },
+  {
+    "group": 14,
+    "variable": 7,
+    "value": 0.9449393270725848
+  },
+  {
+    "group": 14,
+    "variable": 8,
+    "value": 0.7702592442569035
+  },
+  {
+    "group": 14,
+    "variable": 9,
+    "value": 0.9243312264630914
+  },
+  {
+    "group": 14,
+    "variable": 10,
+    "value": 0.8751256001138378
+  },
+  {
+    "group": 14,
+    "variable": 11,
+    "value": 0.9417721404558177
+  },
+  {
+    "group": 14,
+    "variable": 12,
+    "value": 0.9437543856621288
+  },
+  {
+    "group": 14,
+    "variable": 13,
+    "value": 0.7171988207302256
+  },
+  {
+    "group": 14,
+    "variable": 14,
+    "value": 0.9999999999999999
+  },
+  {
+    "group": 14,
+    "variable": 15,
+    "value": 0.8109625106997749
+  },
+  {
+    "group": 14,
+    "variable": 16,
+    "value": 0.7596966443475377
+  },
+  {
+    "group": 14,
+    "variable": 17,
+    "value": 0.8839612422606904
+  },
+  {
+    "group": 14,
+    "variable": 18,
+    "value": 0.907362586053424
+  },
+  {
+    "group": 14,
+    "variable": 19,
+    "value": 0.9273682064021193
+  },
+  {
+    "group": 14,
+    "variable": 20,
+    "value": 0.8145066811182042
+  },
+  {
+    "group": 14,
+    "variable": 21,
+    "value": 0.8716048219031718
+  },
+  {
+    "group": 14,
+    "variable": 22,
+    "value": 0.9712077091376494
+  },
+  {
+    "group": 15,
+    "variable": 0,
+    "value": 0.8174656416547322
+  },
+  {
+    "group": 15,
+    "variable": 1,
+    "value": 0.7690289013216374
+  },
+  {
+    "group": 15,
+    "variable": 2,
+    "value": 0.6450874136806413
+  },
+  {
+    "group": 15,
+    "variable": 3,
+    "value": 0.8210075279468274
+  },
+  {
+    "group": 15,
+    "variable": 4,
+    "value": 0.6324168481006558
+  },
+  {
+    "group": 15,
+    "variable": 5,
+    "value": 0.8156232675831465
+  },
+  {
+    "group": 15,
+    "variable": 6,
+    "value": 0.6769189381825483
+  },
+  {
+    "group": 15,
+    "variable": 7,
+    "value": 0.749489967040863
+  },
+  {
+    "group": 15,
+    "variable": 8,
+    "value": 0.6396485134292793
+  },
+  {
+    "group": 15,
+    "variable": 9,
+    "value": 0.8970826003379542
+  },
+  {
+    "group": 15,
+    "variable": 10,
+    "value": 0.878154401460231
+  },
+  {
+    "group": 15,
+    "variable": 11,
+    "value": 0.8983308164206361
+  },
+  {
+    "group": 15,
+    "variable": 12,
+    "value": 0.8825028354188321
+  },
+  {
+    "group": 15,
+    "variable": 13,
+    "value": 0.86183531987638
+  },
+  {
+    "group": 15,
+    "variable": 14,
+    "value": 0.8109625106997749
+  },
+  {
+    "group": 15,
+    "variable": 15,
+    "value": 1
+  },
+  {
+    "group": 15,
+    "variable": 16,
+    "value": 0.8592497218509385
+  },
+  {
+    "group": 15,
+    "variable": 17,
+    "value": 0.8749110278084204
+  },
+  {
+    "group": 15,
+    "variable": 18,
+    "value": 0.8793616028900884
+  },
+  {
+    "group": 15,
+    "variable": 19,
+    "value": 0.7973777933310853
+  },
+  {
+    "group": 15,
+    "variable": 20,
+    "value": 0.7307560457186428
+  },
+  {
+    "group": 15,
+    "variable": 21,
+    "value": 0.7757902133853462
+  },
+  {
+    "group": 15,
+    "variable": 22,
+    "value": 0.7954210148538782
+  },
+  {
+    "group": 16,
+    "variable": 0,
+    "value": 0.8469491102500915
+  },
+  {
+    "group": 16,
+    "variable": 1,
+    "value": 0.5919232445784919
+  },
+  {
+    "group": 16,
+    "variable": 2,
+    "value": 0.6876019517903196
+  },
+  {
+    "group": 16,
+    "variable": 3,
+    "value": 0.8981092522472732
+  },
+  {
+    "group": 16,
+    "variable": 4,
+    "value": 0.7136571656342152
+  },
+  {
+    "group": 16,
+    "variable": 5,
+    "value": 0.8554691291941529
+  },
+  {
+    "group": 16,
+    "variable": 6,
+    "value": 0.5186768257549681
+  },
+  {
+    "group": 16,
+    "variable": 7,
+    "value": 0.6125809498090535
+  },
+  {
+    "group": 16,
+    "variable": 8,
+    "value": 0.704643101439659
+  },
+  {
+    "group": 16,
+    "variable": 9,
+    "value": 0.858595797525407
+  },
+  {
+    "group": 16,
+    "variable": 10,
+    "value": 0.8782968882929494
+  },
+  {
+    "group": 16,
+    "variable": 11,
+    "value": 0.8462066619712523
+  },
+  {
+    "group": 16,
+    "variable": 12,
+    "value": 0.8867067612090691
+  },
+  {
+    "group": 16,
+    "variable": 13,
+    "value": 0.974975812393803
+  },
+  {
+    "group": 16,
+    "variable": 14,
+    "value": 0.7596966443475377
+  },
+  {
+    "group": 16,
+    "variable": 15,
+    "value": 0.8592497218509385
+  },
+  {
+    "group": 16,
+    "variable": 16,
+    "value": 1
+  },
+  {
+    "group": 16,
+    "variable": 17,
+    "value": 0.7899711616842942
+  },
+  {
+    "group": 16,
+    "variable": 18,
+    "value": 0.9356942847942603
+  },
+  {
+    "group": 16,
+    "variable": 19,
+    "value": 0.6854248333029203
+  },
+  {
+    "group": 16,
+    "variable": 20,
+    "value": 0.6149327862135125
+  },
+  {
+    "group": 16,
+    "variable": 21,
+    "value": 0.6524877816901706
+  },
+  {
+    "group": 16,
+    "variable": 22,
+    "value": 0.815306128378428
+  },
+  {
+    "group": 17,
+    "variable": 0,
+    "value": 0.8091652449041182
+  },
+  {
+    "group": 17,
+    "variable": 1,
+    "value": 0.8980426752551156
+  },
+  {
+    "group": 17,
+    "variable": 2,
+    "value": 0.6555371386837126
+  },
+  {
+    "group": 17,
+    "variable": 3,
+    "value": 0.7267923965676139
+  },
+  {
+    "group": 17,
+    "variable": 4,
+    "value": 0.5336984584111331
+  },
+  {
+    "group": 17,
+    "variable": 5,
+    "value": 0.8360023550905742
+  },
+  {
+    "group": 17,
+    "variable": 6,
+    "value": 0.7969661373907363
+  },
+  {
+    "group": 17,
+    "variable": 7,
+    "value": 0.8794476166473709
+  },
+  {
+    "group": 17,
+    "variable": 8,
+    "value": 0.5100821110563769
+  },
+  {
+    "group": 17,
+    "variable": 9,
+    "value": 0.961832456332557
+  },
+  {
+    "group": 17,
+    "variable": 10,
+    "value": 0.8701028544370242
+  },
+  {
+    "group": 17,
+    "variable": 11,
+    "value": 0.936255232306983
+  },
+  {
+    "group": 17,
+    "variable": 12,
+    "value": 0.9329350068737786
+  },
+  {
+    "group": 17,
+    "variable": 13,
+    "value": 0.7316236308227879
+  },
+  {
+    "group": 17,
+    "variable": 14,
+    "value": 0.8839612422606904
+  },
+  {
+    "group": 17,
+    "variable": 15,
+    "value": 0.8749110278084204
+  },
+  {
+    "group": 17,
+    "variable": 16,
+    "value": 0.7899711616842942
+  },
+  {
+    "group": 17,
+    "variable": 17,
+    "value": 1
+  },
+  {
+    "group": 17,
+    "variable": 18,
+    "value": 0.9087414596522521
+  },
+  {
+    "group": 17,
+    "variable": 19,
+    "value": 0.8569325127906885
+  },
+  {
+    "group": 17,
+    "variable": 20,
+    "value": 0.8482134518556572
+  },
+  {
+    "group": 17,
+    "variable": 21,
+    "value": 0.9310312491370268
+  },
+  {
+    "group": 17,
+    "variable": 22,
+    "value": 0.8184191330665269
+  },
+  {
+    "group": 18,
+    "variable": 0,
+    "value": 0.9309368168503741
+  },
+  {
+    "group": 18,
+    "variable": 1,
+    "value": 0.7832418478993193
+  },
+  {
+    "group": 18,
+    "variable": 2,
+    "value": 0.8263494841436901
+  },
+  {
+    "group": 18,
+    "variable": 3,
+    "value": 0.9275703553819001
+  },
+  {
+    "group": 18,
+    "variable": 4,
+    "value": 0.7854062019868098
+  },
+  {
+    "group": 18,
+    "variable": 5,
+    "value": 0.9042853778754155
+  },
+  {
+    "group": 18,
+    "variable": 6,
+    "value": 0.7129499128033788
+  },
+  {
+    "group": 18,
+    "variable": 7,
+    "value": 0.7967532826836985
+  },
+  {
+    "group": 18,
+    "variable": 8,
+    "value": 0.7418133486025478
+  },
+  {
+    "group": 18,
+    "variable": 9,
+    "value": 0.9552896338665022
+  },
+  {
+    "group": 18,
+    "variable": 10,
+    "value": 0.9377945002903849
+  },
+  {
+    "group": 18,
+    "variable": 11,
+    "value": 0.950931131331648
+  },
+  {
+    "group": 18,
+    "variable": 12,
+    "value": 0.9753445235434268
+  },
+  {
+    "group": 18,
+    "variable": 13,
+    "value": 0.888181171725581
+  },
+  {
+    "group": 18,
+    "variable": 14,
+    "value": 0.907362586053424
+  },
+  {
+    "group": 18,
+    "variable": 15,
+    "value": 0.8793616028900884
+  },
+  {
+    "group": 18,
+    "variable": 16,
+    "value": 0.9356942847942603
+  },
+  {
+    "group": 18,
+    "variable": 17,
+    "value": 0.9087414596522521
+  },
+  {
+    "group": 18,
+    "variable": 18,
+    "value": 1
+  },
+  {
+    "group": 18,
+    "variable": 19,
+    "value": 0.8090206045473756
+  },
+  {
+    "group": 18,
+    "variable": 20,
+    "value": 0.7178110961180278
+  },
+  {
+    "group": 18,
+    "variable": 21,
+    "value": 0.8340431256596212
+  },
+  {
+    "group": 18,
+    "variable": 22,
+    "value": 0.9286119573390531
+  },
+  {
+    "group": 19,
+    "variable": 0,
+    "value": 0.882338416717128
+  },
+  {
+    "group": 19,
+    "variable": 1,
+    "value": 0.9446549722964468
+  },
+  {
+    "group": 19,
+    "variable": 2,
+    "value": 0.715116990678683
+  },
+  {
+    "group": 19,
+    "variable": 3,
+    "value": 0.7256743251204291
+  },
+  {
+    "group": 19,
+    "variable": 4,
+    "value": 0.5199053866481711
+  },
+  {
+    "group": 19,
+    "variable": 5,
+    "value": 0.7477393505508537
+  },
+  {
+    "group": 19,
+    "variable": 6,
+    "value": 0.9695722622303451
+  },
+  {
+    "group": 19,
+    "variable": 7,
+    "value": 0.9582964325639887
+  },
+  {
+    "group": 19,
+    "variable": 8,
+    "value": 0.6079695303870436
+  },
+  {
+    "group": 19,
+    "variable": 9,
+    "value": 0.8884820760949195
+  },
+  {
+    "group": 19,
+    "variable": 10,
+    "value": 0.8107227682536553
+  },
+  {
+    "group": 19,
+    "variable": 11,
+    "value": 0.8693759101595151
+  },
+  {
+    "group": 19,
+    "variable": 12,
+    "value": 0.8558393024043838
+  },
+  {
+    "group": 19,
+    "variable": 13,
+    "value": 0.668074620505072
+  },
+  {
+    "group": 19,
+    "variable": 14,
+    "value": 0.9273682064021193
+  },
+  {
+    "group": 19,
+    "variable": 15,
+    "value": 0.7973777933310853
+  },
+  {
+    "group": 19,
+    "variable": 16,
+    "value": 0.6854248333029203
+  },
+  {
+    "group": 19,
+    "variable": 17,
+    "value": 0.8569325127906885
+  },
+  {
+    "group": 19,
+    "variable": 18,
+    "value": 0.8090206045473756
+  },
+  {
+    "group": 19,
+    "variable": 19,
+    "value": 0.9999999999999998
+  },
+  {
+    "group": 19,
+    "variable": 20,
+    "value": 0.9537678144784346
+  },
+  {
+    "group": 19,
+    "variable": 21,
+    "value": 0.7857118034576547
+  },
+  {
+    "group": 19,
+    "variable": 22,
+    "value": 0.876283160685144
+  },
+  {
+    "group": 20,
+    "variable": 0,
+    "value": 0.7497495237595265
+  },
+  {
+    "group": 20,
+    "variable": 1,
+    "value": 0.9077586305820409
+  },
+  {
+    "group": 20,
+    "variable": 2,
+    "value": 0.5241565910575308
+  },
+  {
+    "group": 20,
+    "variable": 3,
+    "value": 0.5443750060860162
+  },
+  {
+    "group": 20,
+    "variable": 4,
+    "value": 0.3043452212353317
+  },
+  {
+    "group": 20,
+    "variable": 5,
+    "value": 0.6636918993974601
+  },
+  {
+    "group": 20,
+    "variable": 6,
+    "value": 0.9133780729527106
+  },
+  {
+    "group": 20,
+    "variable": 7,
+    "value": 0.9092564947118603
+  },
+  {
+    "group": 20,
+    "variable": 8,
+    "value": 0.3922457944749063
+  },
+  {
+    "group": 20,
+    "variable": 9,
+    "value": 0.8348612649712125
+  },
+  {
+    "group": 20,
+    "variable": 10,
+    "value": 0.7035231404997695
+  },
+  {
+    "group": 20,
+    "variable": 11,
+    "value": 0.782072087043346
+  },
+  {
+    "group": 20,
+    "variable": 12,
+    "value": 0.778160921397088
+  },
+  {
+    "group": 20,
+    "variable": 13,
+    "value": 0.5829623559197755
+  },
+  {
+    "group": 20,
+    "variable": 14,
+    "value": 0.8145066811182042
+  },
+  {
+    "group": 20,
+    "variable": 15,
+    "value": 0.7307560457186428
+  },
+  {
+    "group": 20,
+    "variable": 16,
+    "value": 0.6149327862135125
+  },
+  {
+    "group": 20,
+    "variable": 17,
+    "value": 0.8482134518556572
+  },
+  {
+    "group": 20,
+    "variable": 18,
+    "value": 0.7178110961180278
+  },
+  {
+    "group": 20,
+    "variable": 19,
+    "value": 0.9537678144784346
+  },
+  {
+    "group": 20,
+    "variable": 20,
+    "value": 1
+  },
+  {
+    "group": 20,
+    "variable": 21,
+    "value": 0.7170056236165618
+  },
+  {
+    "group": 20,
+    "variable": 22,
+    "value": 0.7275890254830235
+  },
+  {
+    "group": 21,
+    "variable": 0,
+    "value": 0.7499069919112906
+  },
+  {
+    "group": 21,
+    "variable": 1,
+    "value": 0.9022422235128942
+  },
+  {
+    "group": 21,
+    "variable": 2,
+    "value": 0.6533217074398843
+  },
+  {
+    "group": 21,
+    "variable": 3,
+    "value": 0.6745957389539268
+  },
+  {
+    "group": 21,
+    "variable": 4,
+    "value": 0.5472768851982414
+  },
+  {
+    "group": 21,
+    "variable": 5,
+    "value": 0.769153449966521
+  },
+  {
+    "group": 21,
+    "variable": 6,
+    "value": 0.7835864977689498
+  },
+  {
+    "group": 21,
+    "variable": 7,
+    "value": 0.8605688998110372
+  },
+  {
+    "group": 21,
+    "variable": 8,
+    "value": 0.48957725084598375
+  },
+  {
+    "group": 21,
+    "variable": 9,
+    "value": 0.8925569994947835
+  },
+  {
+    "group": 21,
+    "variable": 10,
+    "value": 0.8358886655179117
+  },
+  {
+    "group": 21,
+    "variable": 11,
+    "value": 0.8911622465388
+  },
+  {
+    "group": 21,
+    "variable": 12,
+    "value": 0.8729915946873632
+  },
+  {
+    "group": 21,
+    "variable": 13,
+    "value": 0.5794111714560926
+  },
+  {
+    "group": 21,
+    "variable": 14,
+    "value": 0.8716048219031718
+  },
+  {
+    "group": 21,
+    "variable": 15,
+    "value": 0.7757902133853462
+  },
+  {
+    "group": 21,
+    "variable": 16,
+    "value": 0.6524877816901706
+  },
+  {
+    "group": 21,
+    "variable": 17,
+    "value": 0.9310312491370268
+  },
+  {
+    "group": 21,
+    "variable": 18,
+    "value": 0.8340431256596212
+  },
+  {
+    "group": 21,
+    "variable": 19,
+    "value": 0.7857118034576547
+  },
+  {
+    "group": 21,
+    "variable": 20,
+    "value": 0.7170056236165618
+  },
+  {
+    "group": 21,
+    "variable": 21,
+    "value": 1
+  },
+  {
+    "group": 21,
+    "variable": 22,
+    "value": 0.8017215051526706
+  },
+  {
+    "group": 22,
+    "variable": 0,
+    "value": 0.9862408131120196
+  },
+  {
+    "group": 22,
+    "variable": 1,
+    "value": 0.825622875470762
+  },
+  {
+    "group": 22,
+    "variable": 2,
+    "value": 0.9169002401179087
+  },
+  {
+    "group": 22,
+    "variable": 3,
+    "value": 0.9379271915810364
+  },
+  {
+    "group": 22,
+    "variable": 4,
+    "value": 0.8360352478881969
+  },
+  {
+    "group": 22,
+    "variable": 5,
+    "value": 0.8724736841084194
+  },
+  {
+    "group": 22,
+    "variable": 6,
+    "value": 0.8263858544139877
+  },
+  {
+    "group": 22,
+    "variable": 7,
+    "value": 0.862777308271855
+  },
+  {
+    "group": 22,
+    "variable": 8,
+    "value": 0.8481179750614853
+  },
+  {
+    "group": 22,
+    "variable": 9,
+    "value": 0.8876574085031383
+  },
+  {
+    "group": 22,
+    "variable": 10,
+    "value": 0.898026331781887
+  },
+  {
+    "group": 22,
+    "variable": 11,
+    "value": 0.9123488684818903
+  },
+  {
+    "group": 22,
+    "variable": 12,
+    "value": 0.9326287987759878
+  },
+  {
+    "group": 22,
+    "variable": 13,
+    "value": 0.7823793134842079
+  },
+  {
+    "group": 22,
+    "variable": 14,
+    "value": 0.9712077091376494
+  },
+  {
+    "group": 22,
+    "variable": 15,
+    "value": 0.7954210148538782
+  },
+  {
+    "group": 22,
+    "variable": 16,
+    "value": 0.815306128378428
+  },
+  {
+    "group": 22,
+    "variable": 17,
+    "value": 0.8184191330665269
+  },
+  {
+    "group": 22,
+    "variable": 18,
+    "value": 0.9286119573390531
+  },
+  {
+    "group": 22,
+    "variable": 19,
+    "value": 0.876283160685144
+  },
+  {
+    "group": 22,
+    "variable": 20,
+    "value": 0.7275890254830235
+  },
+  {
+    "group": 22,
+    "variable": 21,
+    "value": 0.8017215051526706
+  },
+  {
+    "group": 22,
+    "variable": 22,
+    "value": 1
+  }
+]
