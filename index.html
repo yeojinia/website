@@ -5,12 +5,45 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Insert title here</title>
+<title>Data Visualization</title>
 <script type = "text/javascript" src="project.js"></script>
+<script type= "text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+<script type= "text/javascript" src="select-togglebutton.js"></script>
+<script type= "text/javascript" src="data/daily_stats3.json"></script>
+<script type= "text/javascript" src="data/disease_correlation.json"></script>
+<script type= "text/javascript" src="data/confirmed_cases.json"></script>
+
+<!-- <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="select-togglebutton.js"></script>
+
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="css/rSlider.min.css">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
+.chart-container{
+	display:flex;
+	align-items:center;
+}
+.interaction-container{
+	margin-left: auto;
+	max-width: 45%;
+}
+.form-group2{
+	margin-left: auto;
+}
+.barchart-container{
+  /* position: fixed;*/
+  top: 50%;
+  left: 50%;
+  /* border: 1px solid black;*/
+  margin-top: 50px;
+  margin-left: -100px;
+  /* border-radius: 4px; */
+  max-width:580px;
+}
 .top {
 	background-color: #333;
 	border-bottom: 3px solid #00b3bc;
@@ -18,27 +51,30 @@
 	padding: 20px;
 	}
 .top h1 {
-	font-size: 20px;
+	font-size: 25px;
 	text-align: center;
 }
 .container {
 	width: 80%;
 	margin: 170px auto;
+	height: 2500px;
 }
 .slider-container {
 	width: 90%;
 	max-width: 500px;
 	margin: 0 auto 50px;
 }
-
-	.state{
-		fill: none;
-		stroke: #a9a9a9;
-		stroke-width: 1;
-	}
-	.state:hover{
-		fill-opacity:0.5;
-	}
+.states_div{
+	margin-right: auto;
+}
+.state{
+	fill: none;
+	stroke: #a9a9a9;
+	stroke-width: 1;
+}
+.state:hover{
+	fill-opacity:0.5;
+}
 	#tooltip {   
 		position: absolute;           
 		text-align: center;
@@ -79,221 +115,572 @@
 	}
 </style>
 
+
+
 </head>
 
 <body>
-<div class="top"> <h1> COVID-19 Data Visualization </h1> </div>
+<div class="top"> <h1> COVID-19 Data Visualization in USA  </h1> </div>
 
-<div class="container">
-	<div class="slider-container">
-		<input type="text" id="slider" class="slider" />
+<!-- <input class="button" type="submit" value="Submit input">
+<input class="button" type="reset" value="Reset input"> -->
+
+        <div class="container" style="margin-top: 100px;">
+			
+        <!-- <h1><b>Covid-19 Data Visualization</b></h1> --> 
+
+<!--
+            <div class="row form-group">
+	            <label for="example2">Multiple select: </label>
+                <br>
+                <select id="state_multiple_select" multiple="multiple">
+                    <option>HI</option>
+                    <option>AK</option>
+                    <option>FL</option>
+					<option>SC</option>
+					<option>GA</option>
+					<option>AL</option>
+					<option>NC</option>
+					<option>TN</option>
+					<option>RI</option>
+					<option>CT</option>
+					<option>MA</option>
+					<option>ME</option>
+					<option>NH</option>
+					<option>VT</option>
+					<option>NY</option>
+					<option>NJ</option>
+					<option>PA</option>
+					<option>DE</option>
+					<option>MD</option>
+					<option>WV</option>
+					<option>KY</option>
+					<option>OH</option>
+					<option>MI</option>
+					<option>WY</option>
+					<option>MT</option>
+					<option>ID</option>
+					<option>WA</option>
+					<option>DC</option>
+					<option>TX</option>
+					<option>CA</option>
+					<option>AZ</option>
+					<option>NV</option>
+					<option>UT</option>
+					<option>CO</option>
+					<option>NM</option>
+					<option selected>OR</option>
+					<option>ND</option>
+					<option>SD</option>
+					<option>NE</option>
+					<option>IA</option>
+					<option>MS</option>
+					<option>IN</option>
+					<option>IL</option>
+					<option>MN</option>
+					<option>WI</option>
+					<option>MO</option>
+					<option>AR</option>
+					<option>OK</option>
+					<option>KS</option>
+					<option>LA</option>
+					<option>VA</option>
+                </select>
+			</div>
+-->
+			
+
+
+
+<!-- Create a div where the graph will take place -->
+		<h1>Daily Changes</h1>
+		<div class = "chart-container" >			
+			<div class="barchart-container"> <!-- 	style="height: 370px; width: 90%;" -->
+				<!-- <label for="barchart">Confirmed Cases </label> -->
+				<svg id="barChartContainer" width="600px" height="370px">
+			</div>
+			
+			<div class="interaction-container">
+				<div class="slider-container">
+					<input type="text" id="slider" class="slider" />
+				</div>
+				
+				<div class="form-group2">
+	             <label for="example1">Single select: </label>
+	                <br>
+	                <select id="state_single_select">
+	                    <option>HI</option>
+	                    <option>AK</option>
+	                    <option>FL</option>
+						<option>SC</option>
+						<option>GA</option>
+						<option>AL</option>
+						<option>NC</option>
+						<option>TN</option>
+						<option>RI</option>
+						<option>CT</option>
+						<option>MA</option>
+						<option>ME</option>
+						<option>NH</option>
+						<option>VT</option>
+						<option>NY</option>
+						<option>NJ</option>
+						<option>PA</option>
+						<option>DE</option>
+						<option>MD</option>
+						<option>WV</option>
+						<option>KY</option>
+						<option>OH</option>
+						<option>MI</option>
+						<option>WY</option>
+						<option>MT</option>
+						<option>ID</option>
+						<option>WA</option>
+						<option>DC</option>
+						<option>TX</option>
+						<option>CA</option>
+						<option>AZ</option>
+						<option>NV</option>
+						<option>UT</option>
+						<option>CO</option>
+						<option>NM</option>
+						<option selected>OR</option>
+						<option>ND</option>
+						<option>SD</option>
+						<option>NE</option>
+						<option>IA</option>
+						<option>MS</option>
+						<option>IN</option>
+						<option>IL</option>
+						<option>MN</option>
+						<option>WI</option>
+						<option>MO</option>
+						<option>AR</option>
+						<option>OK</option>
+						<option>KS</option>
+						<option>LA</option>
+						<option>VA</option>
+	                </select>
+	            </div>
+			</div>	
+			
+		</div>
+
+		<h1> United States Map </h1>
+		<div class="states_div">
+
+			<svg width="1400" height="650" id="statesvg">
+				<g id="statesmap"></g>
+			</svg> <!-- svg to hold the map. -->
+		</div>
+
+		<h1>Conditions contributing to deaths involving covid-19 diseases</h1>
+		<div id="my_dataviz">
+		</div>
+		<div id="tooltip">
+		</div>
+		
 	</div>
-</div>
 
-	<script src="js/rSlider.min.js"></script>
-    <script>
+<!-- div to hold tooltip. -->
+
+<!-- <svg width ="400" height="500" id="barchart"></svg> -->
+<script src="uStates.js"></script> <!-- creates uStates. -->
+<script src = "http://d3js.org/d3.v3.js"></script>
+<script src = "https://d3js.org/d3.v4.js"></script>
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<script src="https://d3js.org/d3-dsv.v2.min.js"></script>
+<!-- Load color palettes -->
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+
+
+<script src="js/rSlider.min.js"></script>
+<script>
         (function () {
             'use strict';
 
             var init = function () {                
                 var slider = new rSlider({
                     target: '#slider',
-                    values: ['March', 'April', 'May', 'June', 'July', 'August','September'],
+                    values: ['Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug','Sep'],
                     range: true,
-                    set: ['March', 'September'],
+                    set: ['Mar', 'Sep'],
                     onChange: function (vals) {
-                        console.log(vals);
+                       console.log(vals);
                     }
                 });
             };
             window.onload = init;
         })();
-    </script>
-
-
-<div id="tooltip"></div><!-- div to hold tooltip. -->
-<svg width="960" height="600" id="statesvg"></svg> <!-- svg to hold the map. -->
-<svg width ="400" height="500" id="barchart"></svg>
-<script src="uStates.js"></script> <!-- creates uStates. -->
-<script src = "http://d3js.org/d3.v3.js"></script>
-<script src="https://d3js.org/d3.v3.min.js"></script>
-<script src="https://d3js.org/d3.v4.min.js"></script>
-
-<script src="https://d3js.org/d3-dsv.v2.min.js"></script>
-<script src="https://d3js.org/d3-fetch.v2.min.js"></script>
-
-<div class="rangeslider"> 
-<input type="range" min="1" max="100" value="10" class="myslider" id="sliderRange">
-<p>Value: <span id="demo"></span></p> 
-</div>
+</script>
 
 <script>
-function tooltipHtml(n, d){	/* function to create html content string in tooltip div. */
+	function tooltipHtml(n, d){	// function to create html content string in tooltip div. 
 		return "<h4>"+n+"</h4><table>"+
-			//"<tr><td>Low</td><td>"+(d.low)+"</td></tr>"+
-			//"<tr><td>Average</td><td>"+(d.avg)+"</td></tr>"+
-			//"<tr><td>High</td><td>"+(d.high)+"</td></tr>"+
+			"<tr><td>Confirmed Cases</td><td>"+(d.sum)+"</td></tr>"+
 			"</table>";
 	}
 	
 	var sampleData ={};	/* Sample random data. */	
-	["HI", "AK", "FL", "SC", "GA", "AL", "NC", "TN", "RI", "CT", "MA",
-	"ME", "NH", "VT", "NY", "NJ", "PA", "DE", "MD", "WV", "KY", "OH", 
-	"MI", "WY", "MT", "ID", "WA", "DC", "TX", "CA", "AZ", "NV", "UT", 
-	"CO", "NM", "OR", "ND", "SD", "NE", "IA", "MS", "IN", "IL", "MN", 
-	"WI", "MO", "AR", "OK", "KS", "LS", "VA"]
-		.forEach(function(d){ 
-			var low=Math.round(100*Math.random()), 
-				mid=Math.round(100*Math.random()), 
-				high=Math.round(100*Math.random());
-			sampleData[d]={low:d3.min([low,mid,high]), high:d3.max([low,mid,high]), 
-					avg:Math.round((low+mid+high)/3), color:d3.interpolate("#ffffcc", "#800026")(low/100)}; 
-		});
+		
+	data.forEach(function(d){
+		//console.log(d[""]);
+		//sampleData[d[""]]={low:1, high:1, avg:1, color:"#800026"};
+		var low=Math.round(100*Math.random()), 
+			mid=Math.round(100*Math.random()), 
+			high=Math.round(100*Math.random());
+			sampleData[d[""]]={low:d3.min([low,mid,high]), high:d3.max([low,mid,high]), 
+					avg:Math.round((low+mid+high)/3), sum:d["sum"], color:d3.interpolate("#ffffcc", "#800026")(+(d["sum"])/500000)
+					};
+	});
+
+	d3.select("#statesvg")
+	.select("g")
+	.attr("transform", "translate(10, 30)" );
+
+
+	d3.select("#statesvg")
+	.select("g")
+	.append("text")
+	.attr("x", 0)
+    .attr("text-anchor", "left")
+	.style("font-size", "22px")
+	//.text("Confirmed Cases/Death Cases in USA");	
 	
+/*	svg_heatmap.append("text")
+        .attr("x", 0)
+        .attr("y", -50)
+        .attr("text-anchor", "left")
+        .style("font-size", "22px")
+        .text("A heatmap of contributing to deaths involving covid-19 diseases");
+*/		
 	/* draw states on id #statesvg */	
-	uStates.draw("#statesvg", sampleData, tooltipHtml);
-	
-	d3.select(self.frameElement).style("height", "600px"); 
+	uStates.draw("#statesmap", sampleData, tooltipHtml);
+		
+	//d3.select(self.frameElement)
+
+
 </script>
 
 <script>
-	const dataFile =[50.5,51.34782609,51.875,53.20833333,54.58333333,55.16666667,58.125,56.20833333,53.66666667,52.54166667,50.95833333,51.45833333,53.375,55.5,57.08333333,57.04166667,54.75,56.04166667,60.41666667,66.25,55.42424242,56.03448276,57.79166667,59.91666667,59.16666667,59.625,62.25,58.79166667,56.29166667,58.45833333,59.08333333,61.20833333,64.16666667,56.72,43.54166667,44.95833333,48.33333333,53.91666667,57.45833333,60.88,60.08333333,52.8,53.375,55.41666667,59,59,60.58333333,62.04166667,64.20833333,64.6,66.33333333,68.95833333,60.29411765,57.20833333,59.45833333,58.56,56.95833333,61.41666667,64.75,65.83333333,64.45833333,60,62.83333333,61.95833333,68.70833333,72.83333333,71.83333333,67.375,66.83333333,66.38461538,63.42857143,64.83333333,57.10526316,64.80952381,64.66666667,66.8,65.45833333,57.85185185,56.5,60.54166667,64.08333333,64.75,67.20833333,66.92,66.66666667,63.41666667,58.04166667,59.375,65.25,66.12,68.29166667,72.95833333,71.33333333,71.29166667,71.79166667,72.29166667,71.45833333,72.11538462,69,63.20833333,65.83333333,63.5,64.70833333,67.68,69.625,70.16666667,72.25,73.25,68.70833333,71.79166667,75.75,73.88,77.08333333,82.16666667,84.58333333,86.08333333,87.45833333,87.375,86.66666667,89.375,89.58333333,87.41666667,86.33333333,85.2,85.25,88.41666667,90.75,90.75,91.08333333,90.29166667,88.06896552,88,84.45833333,80.25,80.70833333,83.08333333,86.41666667,89.16,88.07407407,81.52,76.12,79.70833333,82.08333333,82.875,83.70833333,85.45833333,89.16666667,92.75,96.33333333,97.95833333,98.22222222,95.79166667,94.54166667,97.25,98.375,98.95833333,95.5,83.91666667,86.61538462,82.80769231,83.6,89.25,94.12,95.84,93.76,91.28,92.68,93.4,91.08,90.58333333,90.625,92.625,94.91666667,96.125,96.83333333,97.45833333,97.58333333,96.58333333,96.56,93.2,90.41666667,88.70833333,91.375,93.29166667,94.83333333,99.16,100,99.08333333,99.08333333,100.75,100.125,101.5,103.7916667,105.3076923,103.8333333,101,99.79166667,100.68,99.75,100.9583333,101.0833333,97.41666667,99.33333333,97.95833333,92.45833333,89,93,98.33333333,100.76,101.8333333,102.8333333,104.25,104.875,101.8333333,100,101.5833333,99.29166667,100.5416667,96.91666667,97.45833333,100.24,99.08333333,99.70833333,98.88,100,102.625,103.9166667,103.25,102.4375,101.6129032,103.0384615,103.52,95.70588235,91.83333333];
-	
-	var temperature_freq = new Array(7);
-	
-	for(var i =0; i<temperature_freq.length; i++){
-		temperature_freq[i] = 0 ;
-	}
-	
-	const belowFifty = [];
-	const fiftyToSixty = [];
-	const sixtyToSeventy = [];
-	const seventyToEighty = [];
-	const eightyToNinety = [];
-	const ninetyToOneHundred = [];
-	const overOnehundred = [];
-	
-	for(var i =0; i<dataFile.length; i++){
-		if(dataFile[i] <50){
-			belowFifty.push(dataFile[i]);
-			temperature_freq[0]++;
-		}
-		else if(dataFile[i] >=50 && dataFile[i] < 60){
-			fiftyToSixty.push(dataFile[i]);
-			temperature_freq[1]++;
-		}
-		else if(dataFile[i] >=60 && dataFile[i] < 70){
-			sixtyToSeventy.push(dataFile[i]);
-			temperature_freq[2]++;
-		}
-		else if(dataFile[i] >=70 && dataFile[i] < 80){
-			seventyToEighty.push(dataFile[i]);
-			temperature_freq[3]++;
-		}
-		else if(dataFile[i] >=80 && dataFile[i] < 90){
-			eightyToNinety.push(dataFile[i]);
-			temperature_freq[4]++;
-		}
-		else if(dataFile[i] >=90 && dataFile[i] < 100){
-			ninetyToOneHundred.push(dataFile[i]);
-			temperature_freq[5]++;
-		}
-		else{
-			overOnehundred.push(dataFile[i]);
-			temperature_freq[6]++;
-		}
-	}
-	
-	const temp_ranges = ["50", "60", "60", "60", "60", "60", "60"];
-	const color = ['skyblue','yellowgreen','violet','blueviolet','chocolate','darkgreen','yellow']
-	/*
-	for(var i =0; i<temperature_freq.length; i++){
-		console.log(temperature_freq[i]);
-	}
-	console.log(belowFifty.length);
-	*/
-	
-	const svg = d3.select('#barchart');	
 
-	var w= 400;
-	var h= 200;
-	var padding = 10;	
-	
-	var y = d3.scale.linear()
-		.domain([0, d3.max(temperature_freq)])
-		.range([h-padding,0])
-	var x = d3.scale.linear()
-		.domain([0, temperature_freq.length])
-        .range([0, w])
-
-	var xAxis = d3.svg.axis()
-				.scale(x)
-				.orient('bottom');
-	var yAxis = d3.svg.axis()
-				.scale(y)
-				.ticks(5)
-				.orient('left');
-	svg.append('g')
-	   .attr('class', 'axis')
-		.attr('transform', "translate("+padding+",0)")
-		.call(yAxis);
-				
-	svg.append("g").call(xAxis)
-		.attr('class', 'axis')
-		.attr('transform',"translate(0,"+(h-padding)+")")
-		.call(xAxis)
-		
-	// text label for the x axis
-	//svg.append("text")             
-	//    .attr("transform", "translate(" + (width/2) + " ," + (height + margin.top + 20) + ")")
-	//    .style("text-anchor", "middle")
-	//    .text(temp_ranges);	
-
-	svg.append("path")
-		.data(temp_ranges)
-		.attr("class", "line")
-
-			
-	svg.selectAll('bar')
-		.data(temperature_freq)
-		.enter().append('rect')
-		.attr('fill',function(d,i) {return color[i];})
-		.attr('x', function(d, i) {return x(i); } )
-		.attr('y', function(d) {return y(d)+padding; })
-		.attr('width', function(d, i) {return x(1)-1;})
-		.attr('height', function(d) {return h-(y(d) + padding);})
+// set the dimensions and margins of the graph
+var margin = {top: 80, right: 25, bottom: 30, left: 250},
+  width = 950 - margin.left - margin.right,
+  height = 800 - margin.top - margin.bottom;
 
 
-	//.attr('y', (d, i) => {return 100-temperature_freq[i]})
-		
-	//var svgdiv = $("#my_dataviz");
-	//var divwidth = svgdiv.width();
+// append the svg object to the body of the page
+var svg_heatmap = d3.select("#my_dataviz")
+.append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+.append("g")
+  .attr("transform",
+        "translate(" + margin.left + "," + margin.top + ")");
 
+var myGroups = {};
+var myVars = {};
+//disease_corr["group"];
+//console.log(disease_corr);
+//disease_corr.forEach(myGroups => console.log(myGroups));
 
-	var rangeslider = document.getElementById("sliderRange");
-	var output = document.getElementById("demo");
-	output.innerHTML = rangeslider.value;
+var myGroups = d3.map(disease_corr, function(d){return d.group;}).keys();
+var myVars = d3.map(disease_corr, function(d){return d.variable;}).keys();
+
+console.log(myGroups);
+console.log(myVars);
+
+//Read the data
+
+  // Build X scales and axis:
+  var x = d3.scaleBand()
+    .range([ 0, width ])
+    .domain(myGroups)
+    .padding(0.05);
+  svg_heatmap.append("g")
+    .style("font-size", 10)
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x).tickSize(0))
+    .select(".domain").remove()
+
+  // Build Y scales and axis:
+  var y = d3.scaleBand()
+    .range([ height, 0 ])
+    .domain(myVars)
+    .padding(0.05);
+  svg_heatmap.append("g")
+    .style("font-size", 10)
+    .call(d3.axisLeft(y).tickSize(0))
+    .select(".domain").remove()
+
+  // Build color scale
+  var myColor = d3.scaleSequential()
+    .interpolator(d3.interpolateInferno)
+    .domain([-1,1])
+
+  // create a tooltip
+  var tooltip_ = d3.select("#my_dataviz")
+    .append("div")
+    .style("opacity", 0)
+    .attr("class", "tooltip_")
+    .style("background-color", "white")
+    .style("border", "solid")
+    .style("border-width", "2px")
+    .style("border-radius", "5px")
+    .style("padding", "5px")
+	.style("max-width","450px")
+	.style("margin-left","300px")
 	
-	rangeslider.oninput = function() {
-	  output.innerHTML = this.value;
-	}
+
+  // Three function that change the tooltip when user hover / move / leave a cell
+  var mouseover = function(d) {
+    tooltip_
+      .style("opacity", 1)
+    d3.select(this)
+      .style("stroke", "black")
+      .style("opacity", 1)
+  }
+  var mousemove = function(d) {
+    tooltip_
+      .html("The correlation coefficient value of this cell is: " + d.value) /*  <br> new line  */
+      .style("left", (d3.mouse(this)[0]+80) + "px")
+      .style("top", (d3.mouse(this)[1]) + "px")
+	  .style("align-items", 'center')
+
+  }
+  var mouseleave = function(d) {
+    tooltip_
+      .style("opacity", 0)
+    d3.select(this)
+      .style("stroke", "none")
+      .style("opacity", 0.8)
+  }
+
+  // add the squares
+  svg_heatmap.selectAll()
+    .data(disease_corr, function(d) {return d.group+':'+d.variable;})
+    .enter()
+    .append("rect")
+      .attr("x", function(d) { return x(d.group) })
+      .attr("y", function(d) { return y(d.variable) })
+      .attr("rx", 4)
+      .attr("ry", 4)
+      .attr("width", x.bandwidth() )
+      .attr("height", y.bandwidth() )
+      .style("fill", function(d) { return myColor(d.value)} )
+      .style("stroke-width", 4)
+      .style("stroke", "none")
+      .style("opacity", 0.8)
+    .on("mouseover", mouseover)
+    .on("mousemove", mousemove)
+    .on("mouseleave", mouseleave)
+//})
+
+// Add title to graph
+
+svg_heatmap.append("text")
+        .attr("x", 0)
+        .attr("y", -50)
+        .attr("text-anchor", "left")
+        .style("font-size", "22px")
+        .text("A heatmap of contributing to deaths involving covid-19 diseases")
+		//.style("font-size","10px")
+		//.text("J09-J18:,  J40-J47:, J80:, J96:, R09.2:, J00-J06, J20-J39, J60-J70, J81-J86, J90-J95, J97-J99, U04: I10-I15:, I20-I25:, I46:, I44, I45, I47-I49:, I50:, I60-I69:, A40-A41:, C00-C97:, G30:, N17-N19:, S00-T98, V01-X59, X60-X84, X85-Y09, Y10-Y36, Y40-Y89, U01-U03:, A00-A39, A42-B99, D00-E07, E15-E64, E70-E90, F00, F02, F04-G26, G31-H95, K00-K93, L00-M99, N00-N16, N20-N98, O00-O99, P00-P96, Q00-Q99, R00-R08, R09.0, R09.1, R09.3, R09.8, R10-R99:, U071:COVID-19, I00-I09:19, I00-I09, I26-I43, I51, I52, I70-I99:, E10-E14:21, E65-E68:, F01, F03:");
+
+// Add subtitle to graph
+/*
+svg_heatmap.append("text")
+        .attr("x", 0)
+        .attr("y", -20)
+        .attr("text-anchor", "left")
+        .style("font-size", "14px")
+        .style("fill", "grey")
+        .style("max-width", 400)
+        .text("A short description of the take-away message of this chart.");
+*/
 
 </script>
 
 
-<script>
+<script type="text/javascript">
+            $(document).ready(function() {
+	        $('select').togglebutton();				
+            })
 
-d3.csv("https://github.com/yeojinia/website/blob/master/data/total_daily_stats2.csv", function(error, data) {
-	if(error) throw error;
-	  console.log(data);
+/*
+$('#state_multiple_select').change(function(){
+	var item = $(this).val();
+	console.log(item);
+	var active_list = document.getElementsByClassName("btn btn-default active");
+	var i ;
+	for(i = 0; i<active_list.length; i++)
+		console.log(active_list[i].textContent);
+	
+	switch($(this).val()){
+		case "1": 
+			click_action_1();
+			console.log("why");
+			break;
+		case "2":
+			click_action_2();
+			break;
+	}
+});
+*/
+	const side_margin = 60;
+	const bar_width = 600 - 2* side_margin;
+	const bar_height = 390 - 2* side_margin;
+	
+	//const chart_div = d3.select('#chartContainer')
+	//	.attr('transform', `translate(300, 300)`);
+	
+	const barchart_svg = d3.select('#barChartContainer');
+	//barchart_svg.remove('g');
+	barchart_svg.selectAll('g').remove();
+	
+	const chart = barchart_svg
+		.append('g')
+	    .attr('transform', `translate(${side_margin}, ${side_margin})`);
+	
+	const yScale = d3.scaleLinear()
+	    .domain([0, d3.max(confirmed_cases, d => d.OR)])
+	    .range([bar_height, 0]);
+	
+	chart.append('g')
+	    .call(d3.axisLeft(yScale));
+	
+	const xScale = d3.scaleBand()
+	    .domain(confirmed_cases.map(d=> d.date))
+		.range([0, bar_width])
+	    .padding(0.2)
+	
+	const xTickScale = d3.scaleBand()
+	    //.domain(confirmed_cases.map(d=> d.date))
+	    .domain([3, 4, 5, 6, 7, 8])
+		.range([0, bar_width])
+	    .padding(0.2)
+	
+	chart.append('g')
+	    .attr('transform', `translate(0, ${bar_height})`)
+	    .call(d3.axisBottom(xTickScale));
+	
+	chart.selectAll()
+	    //.data(goals)
+		.data(confirmed_cases, function(d) {return d.OR;})
+	    .enter()
+	    .append('rect')
+		.style('fill','orange')
+	    .attr('x', (s) => xScale(s.date))
+	    .attr('y', (s) => yScale(s.OR))
+	    .attr('height', (s) => bar_height - yScale(s.OR))
+	    .attr('width', xScale.bandwidth())
+
+$('#state_single_select').change(function(){
+	var item = $(this).val();
+	console.log(item);
+	var active_list = document.getElementsByClassName("btn btn-default active");
+	
+	//const chart_div = d3.select('#chartContainer')
+	//	.attr('transform', `translate(300, 300)`);
+	
+	const barchart_svg = d3.select('#barChartContainer');
+	//barchart_svg.remove('g');
+	barchart_svg.selectAll('g').remove();
+	
+	const chart = barchart_svg
+		.append('g')
+	    .attr('transform', `translate(${side_margin}, ${side_margin})`);
+	
+	const yScale = d3.scaleLinear()
+	    .domain([0, d3.max(confirmed_cases, d => d[item])])
+	    .range([bar_height, 0]);
+	
+	chart.append('g')
+	    .call(d3.axisLeft(yScale));
+	
+	const xScale = d3.scaleBand()
+	    .domain(confirmed_cases.map(d=> d.date))
+		.range([0, bar_width])
+	    .padding(0.2)
+	
+	const xTickScale = d3.scaleBand()
+	    //.domain(confirmed_cases.map(d=> d.date))
+	    .domain([3, 4, 5, 6, 7, 8])
+		.range([0, bar_width])
+	    .padding(0.2)
+	
+	chart.append('g')
+	    .attr('transform', `translate(0, ${bar_height})`)
+	    .call(d3.axisBottom(xTickScale));
+	
+	chart.selectAll()
+	    //.data(goals)
+		.data(confirmed_cases, function(d) {return d[item];})
+	    .enter()
+	    .append('rect')
+		.style('fill','orange')
+	    .attr('x', (s) => xScale(s.date))
+	    .attr('y', (s) => yScale(s[item]))
+	    .attr('height', (s) => bar_height - yScale(s[item]))
+	    .attr('width', xScale.bandwidth())
 });
 
 
+console.log( $( "#button class:btn btn-default active" ).text() );
 
-//d3.csv("./data/total_daily_stats2.csv")
-//    .row(function(d) { return {key: d.key, value: +d.value}; })
-//    .get(function(error, rows) { console.log(rows); });
+/*
+$(document).click(function() {
+    console.log( "You clicked a paragraph!" );
+});
+*/
+</script>
 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   
+
+
+  })();
+
+
+</script>
+
+<script>
+
+months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'];
+month_days = [31, 29, 31, 30,  31, 30,  31, 31, 30];
+
+m_idx = 0, d_idx = 0;
+for(m_idx =0; m_idx< 8; m_idx++){
+	for(d_idx =1; d_idx<=month_days[m_idx]; d_idx++){
+		//console.log(d_idx+'-'+months[m_idx])
+	}
+}
+
+console.log(confirmed_cases)
+
+
+/*
+object_1 = {};
+object_2 = {};
+object_1.label = 'tenant2';
+object_1.y = 230;
+object_2.label = 'yeojin';
+object_2.y = 157;
+*/
 </script>
 
 </body>
